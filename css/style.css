@@ -1,11 +1,12 @@
-
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
     background-color: LightGray;
-    font-family: 'Roboto', sans-serif;
-font-size: 16px;
-color: #838994;
-letter-spacing: 0.03em;
 }
 div {
     border: 1px solid Chocolate;
@@ -21,7 +22,28 @@ div {
     margin: 0 auto;
 }
 
-.top-navigation > .links {
+.top-navigation > .links 
+li {
 	float: right;
 	display: inline-block;
+	margin-left 1.563rem;
+
+}
+
+.top-navigation .links > .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+a:hover,
+a:focus
+{
+color: green;
+}
+
+/*Typography Declartions*/
+.top-font >.font {
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+color: #838994;
+letter-spacing: 0.03em;
 }
